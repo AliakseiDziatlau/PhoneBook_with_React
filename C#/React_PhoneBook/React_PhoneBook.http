@@ -1,0 +1,6 @@
+@React_PhoneBook_HostAddress = http://localhost:5129
+
+GET {{React_PhoneBook_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

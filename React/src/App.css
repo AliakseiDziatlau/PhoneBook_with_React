@@ -1,0 +1,329 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+th, td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+} */
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* /////////////////////////////////////////// */
+
+.table-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: white;
+}
+
+.table thead th {
+  background-color: #f0f0f0;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.table tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+th, td {
+  text-align: left;
+}
+
+/* Затемняющий фон */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Поверх всех элементов */
+}
+
+/* Модальное окно */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+/* Кнопки */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+} */
+
+/* //////////////////////////////////////////// */
+
+.add-element-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.form-wrapper {
+  width: 400px; /* Определяем фиксированную ширину */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%; /* Ширина инпутов равна ширине контейнера */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.head-block {
+  top: 10px;
+  font-size: 40px;
+}
+
+  .head-block h1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+.btn-filter {
+  margin-right: 10px;
+}
+
+.filter-btn-container {
+  display: flex;
+  justify-content: flex-start; /* Прижимаем кнопку к левому краю */
+  margin-bottom: 10px; /* Добавляем отступ снизу для пространства между кнопкой и фильтрами */
+  padding: 10px;
+}
+
+.filter-container {
+  position: relative; /* Для позиционирования кнопок внутри контейнера */
+  border: 2px solid #ccc; /* Рамка для всего контейнера */
+  padding: 20px; /* Отступы внутри контейнера */
+  padding-top: 60px; /* Добавляем больше отступа сверху, чтобы кнопки не перекрывали поля */
+  border-radius: 10px; /* Скругление углов */
+  width: 100%; /* Занимает всю ширину родителя */
+  box-sizing: border-box; /* Учет padding в ширине */
+}
+
+.buttons-container {
+  position: absolute;
+  top: 10px; /* Располагаем в верхней части контейнера */
+  right: 10px; /* Прижимаем к правой стороне */
+}
+
+.close-btn, .reset-btn {
+  background-color: #f5f5f5; /* Цвет фона кнопок */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px; /* Отступ между кнопками */
+}
+
+  .close-btn:hover, .reset-btn:hover {
+      background-color: #ddd; /* Цвет кнопки при наведении */
+  }
+
+.row {
+  display: flex; /* Flex для горизонтального расположения элементов */
+  flex-wrap: wrap; /* Чтобы элементы переносились на следующую строку, если не помещаются */
+  gap: 20px; /* Расстояние между элементами */
+}
+
+.labels-container {
+  display: flex;
+  flex-direction: row; /* Горизонтальное расположение полей */
+  gap: 20px; /* Расстояние между каждым блоком label+input */
+  flex-wrap: wrap; /* Поля могут переходить на следующую строку при уменьшении ширины */
+}
+
+  .labels-container div {
+      display: flex;
+      flex-direction: column; /* Вертикальное расположение label и input */
+  }
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Занимает всю ширину родительского контейнера */
+  box-sizing: border-box; /* Учет padding в ширине */
+}
+
+.apply-btn-container {
+  display: flex;
+  justify-content: flex-start; /* Прижимаем кнопку к левому краю */
+  margin-top: 20px; /* Отступ сверху от полей ввода */
+}
+
+
+
+.apply-btn:hover {
+  background-color: #0056b3; /* Цвет фона при наведении */
+}
